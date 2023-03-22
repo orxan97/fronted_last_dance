@@ -1,0 +1,156 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.header1 {
+  border-bottom: 1px solid #ccd0d6f6;
+  width: 100%;
+  height: 40px;
+}
+.service {
+  margin: 0px 80px;
+  display: inline-block;
+}
+.service_item {
+  margin: 10px 15px;
+  list-style: none;
+  display: inline-block;
+}
+.service_item:hover {
+  color: blue;
+  transition: all 0.3s;
+  border: 2px blue;
+  cursor: pointer;
+}
+.about_item {
+  position: absolute;
+  right: 130px;
+  top: 10px;
+  list-style: none;
+  display: flex;
+}
+.about_item_write {
+  margin: 0px 10px;
+  padding: 0px 7px;
+  border-right: 2px solid black;
+}
+.social_media_item {
+  list-style: none;
+  margin: 0px 10px;
+}
+.social_media_icons_item {
+  display: flex;
+}
+.social_media_item:hover,
+.about_item_write:hover {
+  color: blue;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.header2 {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+.about_list {
+  list-style: none;
+  display: flex;
+}
+.about_list_item {
+  margin: 0px 15px;
+  font-size: 19px;
+}
+.about_list_item:hover {
+  color: red;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.sup {
+  border: 3px solid red;
+  background-color: red;
+  color: black;
+  border-radius: 10px;
+}
+.logo {
+  margin: 0px 90px;
+}
+.add_to_card {
+  display: flex;
+  list-style: none;
+  margin: 0px 65px;
+}
+.social_media {
+  margin: 0px 10px;
+  font-size: 25px;
+}
+.social_media:hover {
+  color: red;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.sale_up {
+  border: 1px solid black;
+  width: auto;
+  height: 45px;
+  background-color: black;
+}
+.write_sale_up {
+  color: white;
+  text-align: center;
+  margin: 12px 0px;
+}
+.shop_now {
+  color: #cebd9c;
+  cursor: pointer;
+}
+.shop_now:hover {
+  border-bottom: 3px solid #cebd9c;
+  transition: all 0.2s;
+}
+.contact_card {
+  border: 1px solid red;
+  width: 100%;
+  height: 170px;
+  background-color: #ebe4cd;
+}
+.home_item {
+  padding: 0px 10px;
+  border-right: 2px solid black;
+  cursor: pointer;
+}
+.contact_item {
+  padding: 0px 10px;
+  cursor: pointer;
+}
+.home_and_contact {
+  display: flex;
+  margin: 20px 0px;
+}
+.contact_header {
+  margin: 0px 10px;
+  font-size: 30px;
+}
+.contact_home_container {
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+/* map */
+.map_container {
+  border: 1px solid red;
+  width: auto;
+  height: 450px;
+  margin: 20px 80px;
+}
+.map{
+width: 100%;
+max-height: 100%;
+}
+
