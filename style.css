@@ -38,7 +38,12 @@
 .social_media_item {
   list-style: none;
   margin: 0px 10px;
+  transition: transform 0.7s ease-in-out;
 }
+.social_media_item:hover {
+  transform: rotate(360deg);
+}
+
 .social_media_icons_item {
   display: flex;
 }
@@ -54,7 +59,11 @@
   display: flex;
   align-content: center;
   align-items: center;
+  position: sticky;
+  top: 0px;
+  background-color: white;
 }
+
 .about_list {
   list-style: none;
   display: flex;
@@ -63,6 +72,7 @@
   margin: 0px 15px;
   font-size: 19px;
 }
+
 .about_list_item:hover {
   color: red;
   transition: all 0.3s;
@@ -107,10 +117,12 @@
 .shop_now {
   color: #cebd9c;
   cursor: pointer;
-}
-.shop_now:hover {
   border-bottom: 3px solid #cebd9c;
+}
+
+.shop_now:hover {
   transition: all 0.2s;
+  font-size: 18px;
 }
 
 .slideshow-container {
@@ -169,7 +181,7 @@
   animation-name: fade;
   animation-duration: 1.5s;
 }
-
+/* card section */
 .card {
   width: 100%;
   height: 320px;
@@ -178,6 +190,7 @@
   justify-content: center;
   gap: 35px;
 }
+
 .box1 {
   background-image: url(https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/items1.jpg);
   background-position: center;
@@ -218,6 +231,8 @@
   width: 360px;
   margin: 10px 0px;
 }
+/* carusel slider 1  */
+
 /* <!-- card section2 --> */
 .card_section2 {
   border: 1px solid whitesmoke;
@@ -365,6 +380,9 @@
   margin: 30px 10px;
   cursor: pointer;
 }
+.footer_icons:hover{
+  /* color: blue; */
+}
 
 .footer_main {
   height: 400px;
@@ -384,9 +402,15 @@
   list-style: none;
   margin: 15px 0px;
   font-size: 18px;
+  cursor: pointer;
+}
+.category:hover {
+  border-bottom: 2px solid #cebd9c;
 }
 .category_container {
   margin: 25px 0px;
+  display: flex;
+  flex-direction: column;
 }
 .footer_logo {
   margin: 20px 0px;
@@ -406,3 +430,4 @@
 .heart_icon {
   color: #ff2020;
 }
+
