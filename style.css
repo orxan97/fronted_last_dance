@@ -312,37 +312,33 @@
   position: relative;
   flex-direction: column;
 }
-.swiper-slide-img{
+.swiper-slide-img {
   overflow: hidden;
 }
 .swiper-slide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-
-  
 }
-.swiper-slide:hover .swiper-slide-img img{
+.swiper-slide:hover .swiper-slide-img img {
   scale: 1.1;
-  transition: 1s
-
+  transition: 1s;
 }
-.swiper-slide:hover .productName{
+.swiper-slide:hover .productName {
   color: red;
-  }
-
+}
 
 .corusel_item_icons {
   display: flex;
-  padding:  5px 10px;
+  padding: 5px 10px;
   gap: 10px;
   background-color: white;
   position: absolute;
   bottom: 0px;
   /* left: 20%;
    */
-   left: 50%;
-   transform: translate(-50%,0);
+  left: 50%;
+  transform: translate(-50%, 0);
   font-size: 20px;
   display: none;
 }
@@ -350,17 +346,54 @@
   display: block;
   bottom: 30px;
 }
-.corusel_item_icons i:hover{
+.corusel_item_icons i:hover {
   cursor: pointer;
   color: red;
 }
-.swiper-slide-img{
+.swiper-slide-img {
   position: relative;
 }
-/*
-carusel slider 1 
+.single_slider {
+  padding: 50px;
+  background-color: #f3ead8;
+  display: flex;
+}
+.single_slide_text {
+  padding: 30px 100px;
+  text-align: center;
+}
 
-<!-- card section2 -->
+.slider2 {
+  display: none;
+}
+.swiper-wrapper2 {
+  display: flex;
+}
+
+.swiper2 {
+  width: 83%;
+  height: auto;
+}
+
+.swiper-slider2 {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+}
+.swiper-slider-img-box2 {
+  overflow: hidden;
+}
+.swiper-slider2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .card_section2 {
   border: 1px solid whitesmoke;
   width: 100%;
@@ -408,27 +441,6 @@ carusel slider 1
   cursor: pointer;
   border-bottom: 2px solid black;
 }
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@media screen and (max-width: 992px) {
-  .service,
-  .about_item,
-  .header1,
-  .about_list {
-    display: none;
-  }
-  .logo {
-    display: block;
-    margin-left: 0px;
-  }
-}
-footer card
 .general_about_container {
   border: 1px solid white;
   height: 210px;
@@ -469,8 +481,6 @@ footer card
 .fast_free_delivery {
   margin: 5px 35px;
 }
-footer
-
 .footer {
   width: 100%;
   height: 100vh;
@@ -556,4 +566,4 @@ footer
 }
 .heart_icon {
   color: #ff2020;
-} */
+}
