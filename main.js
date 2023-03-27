@@ -112,7 +112,7 @@ let products = [
     pic: "./photo/latest3.jpg",
   },
 ];
-let MayYouLikeProducts=[
+let MayYouLikeProducts = [
   {
     name: "Cashmere Tank+Bag",
     oldPrice: 120,
@@ -120,10 +120,9 @@ let MayYouLikeProducts=[
     category: "baby",
     pic: "./photo/latest5.jpg",
   },
-
-]
+];
 let swiperWrapper = document.querySelector(".swiper-wrapper");
-let MayYouLike=document.querySelector(".wrapper2")
+let MayYouLike = document.querySelector(".wrapper2");
 products.forEach((product) => {
   swiperWrapper.innerHTML += `
      <div class="swiper-slide">
@@ -143,7 +142,7 @@ products.forEach((product) => {
         
         </div>`;
 
-        MayYouLike.innerHTML+= `
+  MayYouLike.innerHTML += `
         <div class="swiper-slide">
              <div class="swiper-slide-img">
    
@@ -162,3 +161,27 @@ products.forEach((product) => {
            </div>`;
 });
 
+let calcScrollValue = () => {
+  let scrollProgress = document.querySelector(".progress");
+  let progressValue = document.querySelector(".progress-value");
+
+  let pos = document.documentElement.scrollTop;
+
+  let calcHeight =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
+  let scrollValue = Math.round((pos * 100) / calcHeight);
+
+  if (pos > 100) {
+    scrollProgress.style.display = "grid";
+  } else {
+    scrollProgress.style.display = "none";
+  }
+
+  scrollProgress.addEventListener("click", () => {
+    document.documentElement.scrollTop = 0;
+  });
+};
+
+window.onscroll = calcScrollValue;
+window.onload = calcScrollValue;

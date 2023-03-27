@@ -1,0 +1,54 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-color: red;
+}
+.registration_container {
+  border: 1px solid red;
+  background: white;
+  width: 800px;
+  height: 500px;
+  border-radius: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.registration_container h2 {
+  font-size: 40px;
+  text-align: center;
+  margin-top: 50px;
+}
+.registration_container p {
+  text-align: center;
+  margin-top: 20px;
+}
+.input_container {
+  position: relative;
+  left: 150px;
+  top: 20px;
+}
+.input_container input {
+  width: 530px;
+  height: 50px;
+  display:block;
+
+}
+.login {
+  border: none;
+  color: white;
+  background-color: red;
+  padding: 20px 40px;
+  position: absolute;
+  right: 120px;
+  bottom: 50px;
+  border-radius: 10px;
+}
+.login:hover {
+  color: red;
+  background-color: black;
+}
+
