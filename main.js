@@ -117,8 +117,55 @@ let MayYouLikeProducts = [
     name: "Cashmere Tank+Bag",
     oldPrice: 120,
     price: 98,
-    category: "baby",
+
     pic: "./photo/latest5.jpg",
+  },
+  {
+    name: "Cashmere Tank+Bag",
+    oldPrice: 120,
+    price: 98,
+
+    pic: "./photo/latest4.jpg",
+  },
+  {
+    name: "Cashmere Tank+Bag",
+    oldPrice: 120,
+    price: 98,
+
+    pic: "./photo/latest7.jpg",
+  },
+  {
+    name: "Cashmere Tank+Bag",
+    oldPrice: 120,
+    price: 98,
+
+    pic: "./photo/latest8.jpg",
+  },
+  {
+    name: "Cashmere Tank+Bag",
+    oldPrice: 120,
+    price: 98,
+
+    pic: "./photo/latest1.jpg",
+  },
+  {
+    name: "Cashmere Tank+Bag",
+    oldPrice: 120,
+    price: 98,
+
+    pic: "./photo/latest2.jpg",
+  },
+  {
+    name: "Cashmere Tank+Bag",
+    oldPrice: 120,
+    price: 98,
+    pic: "./photo/latest3.jpg",
+  },
+  {
+    name: "Cashmere Tank+Bag",
+    oldPrice: 120,
+    price: 98,
+    pic: "./photo/latest1.jpg",
   },
 ];
 let swiperWrapper = document.querySelector(".swiper-wrapper");
@@ -127,8 +174,7 @@ products.forEach((product) => {
   swiperWrapper.innerHTML += `
      <div class="swiper-slide">
           <div class="swiper-slide-img">
-
-            <img src="${product.pic}" alt="" />
+          <img src="${product.pic}" alt="" />
             <div class="corusel_item_icons">
               <i class="fa-solid fa-cart-shopping"></i>
               <i class="fa-regular fa-heart"></i>
@@ -139,7 +185,6 @@ products.forEach((product) => {
           <p class="productName">${product.name}</p>
           <p class="productPrice"> $${product.price} <del>$${product.oldPrice}</del></p>
         </div>
-        
         </div>`;
 
   MayYouLike.innerHTML += `
@@ -185,3 +230,14 @@ let calcScrollValue = () => {
 
 window.onscroll = calcScrollValue;
 window.onload = calcScrollValue;
+
+let search_container = document.querySelector(".search_container");
+let searchClick = document.querySelector(".searchClick");
+let searchX = document.querySelector(".fa-circle-xmark");
+searchClick.addEventListener("click", () => {
+  search_container.style.display = "block";
+  searchX.style.opacity = "100";
+});
+searchX.addEventListener("click", () => {
+  search_container.style.display = "none";
+});

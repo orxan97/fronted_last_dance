@@ -135,6 +135,36 @@ html {
   transition: all 0.3s;
   cursor: pointer;
 }
+.search_container {
+  width: 80%;
+  margin: 10px 100px;
+  height: 50px;
+  background-color: red;
+  display: none;
+}
+.fa-circle-xmark{
+  border-radius: 50%;
+  opacity: 100;
+  position: absolute;
+  right: 12%;
+  top: 19%;
+  color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .sale_up {
   border: 1px solid black;
   width: auto;
@@ -433,6 +463,43 @@ html {
 .swiper {
   width: 83%;
   height: auto;
+  margin: 90px 0px;
+}
+
+.swiper_slider_header {
+  border-bottom: 1px solid black;
+  width: 84%;
+  height: 100px;
+  margin: 50px 110px;
+  display: flex;
+  justify-content: space-between;
+}
+.trending_this_week {
+  font-size: 30px;
+  margin: 35px 0px;
+  cursor: pointer;
+}
+.trending_this_week:hover {
+  color: red;
+}
+.category_items {
+  display: flex;
+}
+.category_items_name {
+  font-size: 20px;
+  margin: 40px 30px;
+  cursor: pointer;
+}
+.category_items_name_fashion {
+  font-size: 20px;
+  margin: 40px 0px;
+  cursor: pointer;
+}
+.category_items_name:hover,
+.category_items_name_fashion:hover {
+  color: red;
+  margin-bottom: 0px;
+  border-bottom: 4px solid red;
 }
 
 .swiper-slide {
@@ -461,6 +528,12 @@ html {
   color: red;
 }
 
+.you_may_like {
+  font-size: 40px;
+  text-align: center;
+  margin: 90px 0px;
+}
+
 .corusel_item_icons {
   display: flex;
   padding: 5px 10px;
@@ -483,6 +556,7 @@ html {
   cursor: pointer;
   color: red;
 }
+
 .swiper-slide-img {
   position: relative;
 }
