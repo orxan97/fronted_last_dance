@@ -101,12 +101,19 @@ html {
   list-style: none;
   display: flex;
 }
-.about_list_item {
+.about_list_item,.about_list_item_blog {
   margin: 0px 15px;
   font-size: 19px;
 }
 
-.about_list_item:hover {
+.about_list_item:hover
+ {
+  color: red;
+  transition: all 0.3s;
+  cursor: pointer;
+  
+}
+.about_list_item_blog:hover{
   color: red;
   transition: all 0.3s;
   cursor: pointer;
@@ -135,35 +142,46 @@ html {
   transition: all 0.3s;
   cursor: pointer;
 }
+
+.blog_page {
+  border-top: 4px solid red;
+  width: 100px;
+  height: 70px;
+  position: absolute;
+  right: 390px;
+  top: 55px;
+  background-color: white;
+  border-radius: 5px;
+  display: none;
+}
+.blog_page li {
+  cursor: pointer;
+  margin: 5px 20px;
+  list-style: none;
+}
+
+.blog_page li:hover{
+  color: red;
+}
+
 .search_container {
   width: 80%;
   margin: 10px 100px;
   height: 50px;
   background-color: red;
+  color: white;
   display: none;
+ 
 }
-.fa-circle-xmark{
+.fa-circle-xmark {
   border-radius: 50%;
   opacity: 100;
   position: absolute;
   right: 12%;
   top: 19%;
   color: black;
+  cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .sale_up {
   border: 1px solid black;
@@ -479,6 +497,10 @@ html {
   margin: 35px 0px;
   cursor: pointer;
 }
+.down{
+  opacity: 0;
+  cursor: pointer;
+}
 .trending_this_week:hover {
   color: red;
 }
@@ -564,6 +586,9 @@ html {
   padding: 50px;
   background-color: #f3ead8;
   display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 .single_slide_text {
   padding: 30px 100px;

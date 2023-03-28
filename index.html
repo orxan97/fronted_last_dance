@@ -62,11 +62,18 @@
           <b> Baby Collection <sup class="sup"> New </sup></b>
         </li>
         <li class="about_list_item"><b> Pages </b></li>
-        <li class="about_list_item"><b> Blog </b></li>
+        <li class="about_list_item_blog"><b> Blog </b></li>
+        <i class="fa-solid fa-caret-down down"></i>
         <li class="about_list_item">
           <a href="./concat.html"> <b> Contact </b> </a>
         </li>
       </ul>
+
+      <div class="blog_page">
+        <li>Blog</li>
+        <li>Element</li>
+        <li>Details</li>
+      </div>
 
       <ul class="add_to_card">
         <li class="social_media">
@@ -84,7 +91,7 @@
     </section>
 
     <input type="text" class="search_container" />
-    <i class="fa-solid fa-circle-xmark "></i>
+    <i class="fa-solid fa-circle-xmark"></i>
 
     <div class="sale_up">
       <p class="write_sale_up">
@@ -119,6 +126,7 @@
           class="slider1_img2"
           style="width: 100%"
         />
+
         <div class="slider1_text_container2">
           <p class="fashion_sale2">Fashion Sale</p>
           <b class="minimal_menz_style2">Minimal Menz Style</b>
@@ -134,6 +142,7 @@
       <a class="next slides1_button" onclick="plusSlides(1)">&#10095;</a>
     </div>
     <br />
+
     <section class="card">
       <div class="fashion_box box1">
         <b class="mens_fashion">Men's Fashion</b>
@@ -186,8 +195,8 @@
 
     <!-- single_slider1 start-->
     <section class="single_slider">
+      <div class="single_slider_btn"><i class="fa-solid fa-chevron-left"></i></div>
       <div class="slider1">
-        <div class="single_slider_btn"><<<</div>
 
         <div class="single_slide_text">
           <h2>Customer Testimonial</h2>
@@ -196,23 +205,31 @@
             Laborum fuga incidunt laboriosam voluptas iure, delectus dignissimos
             facilis neque nulla earum.
           </p>
+          <div class="single_slide_img">
+            <img src="./photo/founder-img.png.webp" alt="">
+            <h2>Orxan Aslanov</h2>
+            <p>Senior Front Developer</p>
+          </div>
         </div>
-        <div></div>
       </div>
       <div class="slider2">
-        <div class="single_slider_btn"><<<</div>
+  
 
         <div class="single_slide_text">
           <h2>Customer Testimonial</h2>
           <p>
             Everybody is different, which is why we offer styles for every body.
             Laborum fuga incidunt laboriosam voluptas iure, delectus dignissimos
-            facilis neque nulla earum. asiman yaxsi oglando
+            facilis neque nulla earum. asimandan salamlar
           </p>
+          <div class="single_slide_img">
+            <img src="./photo/founder-img.png.webp" alt="">
+            <h2>Orxan Aslanov</h2>
+            <p>Senior Front Developer</p>
+          </div>
         </div>
-        <div></div>
       </div>
-      <div class="single_slider_btn">>>></div>
+      <div class="single_slider_btn"><i class="fa-solid fa-chevron-right"></i></div>
     </section>
     <!-- single slider end -->
 
@@ -221,20 +238,7 @@
     <h2 class="you_may_like">YOU MAY LIKE</h2>
     <div class="swiper mySwiper">
       <div class="swiper-wrapper wrapper2">
-        <div class="swiper-slide">
-          <div class="swiper-slide-img">
-            <img src="./photo/latest2.jpg" alt="" />
-            <div class="corusel_item_icons">
-              <i class="fa-solid fa-cart-shopping"></i>
-              <i class="fa-regular fa-heart"></i>
-              <i class="fa-solid fa-magnifying-glass-plus"></i>
-            </div>
-          </div>
-          <div class="slider_corusel_text">
-            <p class="productName">Cashmere Tank + Bag</p>
-            <p class="productPrice">$98.00 <del>$120.00</del></p>
-          </div>
-        </div>
+    
       </div>
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
@@ -427,8 +431,8 @@ card section2 -->
         });
 
         $(".single_slider_btn").click(() => {
-          $(".slider1").fadeToggle(1);
-          $(".slider2").fadeToggle(1);
+          $(".slider1").fadeToggle(100);
+          $(".slider2").fadeToggle(200);
         });
       });
     </script>
